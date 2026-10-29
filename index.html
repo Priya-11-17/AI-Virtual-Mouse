@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Virtual Mouse</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>AI Virtual Mouse</h1>
+
+            <p class="subtitle">
+                Control your computer using hand gestures
+            </p>
+
+            <div class="icon">
+                🖐️
+            </div>
+
+            <h2>Gesture Controls</h2>
+
+            <div class="features">
+
+                <div class="feature">
+                    <span>☝️</span>
+                    <p>Index Finger — Move Cursor</p>
+                </div>
+
+                <div class="feature">
+                    <span>👌</span>
+                    <p>Thumb + Index — Left Click</p>
+                </div>
+
+                <div class="feature">
+                    <span>✌️</span>
+                    <p>Thumb + Middle — Right Click</p>
+                </div>
+
+                <div class="feature">
+                    <span>↕️</span>
+                    <p>Two Fingers — Scroll</p>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="startBtn" onclick="startMouse()">
+                    Start Virtual Mouse
+                </button>
+
+                <button id="stopBtn" onclick="stopMouse()">
+                    Stop Virtual Mouse
+                </button>
+
+            </div>
+
+            <p id="status">
+                Status: Ready
+            </p>
+
+            <p class="footer">
+                Built with Python, OpenCV and MediaPipe
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
